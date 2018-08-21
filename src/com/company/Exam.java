@@ -1,10 +1,11 @@
 package com.company;
 import java.util.*;
 
-public class Exam extends University {
+public class Exam  {
 Random random=new Random();
+private String title;
 int mark;
 University university=new University();
-Map<Student,Integer>spisok=new HashMap<Student,Integer>();
+Map<Student,Integer>marks=new HashMap<Student,Integer>();
 
 }

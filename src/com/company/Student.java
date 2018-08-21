@@ -1,12 +1,9 @@
 package com.company;
 
-public class Student {
-    private String name;
-    public Student(String value){
-        name=value;
-    }
-String getName()
-{
-    return name;
-}
+import java.util.ArrayList;
+import java.util.List;
+
+public class Student extends Man {
+    List<Exam>exams=new ArrayList<Exam>();
+
 }
