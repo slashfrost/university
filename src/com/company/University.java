@@ -1,8 +1,10 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class University {
-    Map<Student,Teacher> employes= new HashMap<Student,Teacher>();
+    List employes=new ArrayList();
 }
