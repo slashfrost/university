@@ -6,6 +6,6 @@ import java.util.Map;
 
 public class Student extends Man {
     int scholarship;
-    Map<Exam,ExamStagesEnum> passing=new HashMap<Exam,ExamStagesEnum>();
+    Map<Exam, ExamStagesEnum> passing = new HashMap<Exam, ExamStagesEnum>();
 
 }

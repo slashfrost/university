@@ -1,5 +1,7 @@
 package com.company;
 
-public class Man {
-    private String name;
+import model.BaseModel;
+
+public class Man extends BaseModel {
+
 }
