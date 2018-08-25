@@ -1,6 +1,7 @@
 package com.company;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Exam {
     private String title;
