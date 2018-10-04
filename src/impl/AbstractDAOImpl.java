@@ -1,21 +1,30 @@
 package impl;
 
 import com.company.Exam;
+import dao.BaseDAO;
+import model.BaseModel;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
-public abstract class AbstractDAOImpl {
-    int mark;
-    List<Exam>exam=new <Exam>ArrayList();
+public abstract class AbstractDAOImpl extends BaseModel implements BaseDAO {
+    List<BaseModel> list;
+    @Override
+    public boolean create(BaseModel entity) {
+        //???
+    }
 
-    public void setExam(List exam) {
-        this.exam = exam;
+    @Override
+    public boolean delete(BaseModel entity) {
+        return list.remove(entity);
     }
-    public void add(List<Integer> exam){
-        exam.add(mark);
-    }
-    public void delete(){
-    exam.remove(mark);
+
+    @Override
+    public boolean update(BaseModel entity) {
+        return list.add(entity);
     }
 }
+
+
+
+
