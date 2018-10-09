@@ -7,11 +7,12 @@ import model.BaseModel;
 
 import java.util.List;
 
-public abstract class AbstractDAOImpl <T extends BaseModel >implements BaseDAO<T> {
-   protected List<T> list;
+public abstract class AbstractDAOImpl<T extends BaseModel> implements BaseDAO<T> {
+    protected List<T> list;
+
     @Override
-    public boolean create(BaseModel entity) {
-        //???
+    public boolean create(T entity) {
+       return list.add(entity);
     }
 
     @Override
@@ -21,8 +22,9 @@ public abstract class AbstractDAOImpl <T extends BaseModel >implements BaseDAO<T
 
     @Override
     public boolean update(T entity) {
-        return list.add(entity);
+        return delete(entity)&&list.add(entity);
     }
+
     @Override
     public T get(Long id) {
         for (T e : list) {
