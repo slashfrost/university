@@ -8,4 +8,11 @@ public class Exam {
     int mark;
     public Map<Student, Integer> marks = new HashMap<Student, Integer>();
 
+    public Map<Student, Integer> getMarks() {
+        return marks;
+    }
+
+    public void setMarks(Map<Student, Integer> marks) {
+        this.marks = marks;
+    }
 }

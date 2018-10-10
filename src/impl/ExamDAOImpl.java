@@ -8,11 +8,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public abstract class ExamDAOImpl extends AbstractDAOImpl implements ExamDAO {
-    Random random=new Random();
-    List<Exam> exam= new <Exam>ArrayList();
-    public void addMark(Student student,ExamDAO exam){
-       // exam.getMarks().add;
+public abstract class ExamDAOImpl<T extends AbstractDAOImpl> implements ExamDAO<T> {
+    List<Exam> exams= new <Exam>ArrayList();
+
+    public List<Exam> getExams() {
+        return exams;
+    }
+
+    public void addMark(Student student, Exam exam){
+        Random random=new Random();
+     return exam.marks.put()
     }
 
 }
