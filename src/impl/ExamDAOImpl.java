@@ -9,11 +9,9 @@ import java.util.List;
 import java.util.Random;
 
 public abstract class ExamDAOImpl<T extends AbstractDAOImpl> implements ExamDAO<T> {
-    List<Exam> exams = new <Exam>ArrayList();
 
-    public List<Exam> getExams() {
-        return exams;
-    }
+
+
     @Override
     public void addMark(Student student, Exam exam) {
         Random random = new Random();
@@ -22,6 +20,6 @@ public abstract class ExamDAOImpl<T extends AbstractDAOImpl> implements ExamDAO<
 
     @Override
     public void getMark(Student student,Exam exam) {
-        exam.marks.getOrDefault(student);
+        exam.marks.get(student);
     }
 }

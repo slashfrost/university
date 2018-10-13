@@ -1,12 +1,13 @@
 package com.company;
 
+import model.BaseModel;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class Exam {
+public class Exam extends BaseModel {
     private String title;
-    int mark;
-    int id;
+
     public Map<Student, Integer> marks = new HashMap<Student, Integer>();
 
     public Map<Student, Integer> getMarks() {
@@ -17,7 +18,5 @@ public class Exam {
         this.marks = marks;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+
 }

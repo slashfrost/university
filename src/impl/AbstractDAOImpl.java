@@ -10,6 +10,9 @@ import java.util.List;
 public abstract class AbstractDAOImpl<T extends BaseModel> implements BaseDAO<T> {
     protected List<T> list;
 
+    public List<T> getExams() {
+        return list;
+    }
     @Override
     public boolean create(T entity) {
        return list.add(entity);
