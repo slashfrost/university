@@ -1,18 +1,20 @@
-package impl;
+package dao.impl;
 
-import com.company.Exam;
 import dao.BaseDAO;
 import model.BaseModel;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class AbstractDAOImpl<T extends BaseModel> implements BaseDAO<T> {
-    protected List<T> list;
+    protected List<T> list=new ArrayList<T>();
 
-    public List<T> getExams() {
-        return list;
+    @Override
+    public List<T> getAll() {
+        return null;
     }
+
     @Override
     public boolean create(T entity) {
        return list.add(entity);

@@ -1,14 +1,12 @@
-package impl;
+package dao.impl;
 
 import com.company.Exam;
 import com.company.Student;
 import dao.ExamDAO;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
-public abstract class ExamDAOImpl<T extends AbstractDAOImpl> implements ExamDAO<T> {
+public  class ExamDAOImpl extends AbstractDAOImpl<Exam> implements ExamDAO {
 
 
 
@@ -19,7 +17,9 @@ public abstract class ExamDAOImpl<T extends AbstractDAOImpl> implements ExamDAO<
     }
 
     @Override
-    public void getMark(Student student,Exam exam) {
-        exam.marks.get(student);
+    public int getMark(Student student,Exam exam) {
+        return exam.marks.get(student);
     }
+
+
 }

@@ -13,5 +13,5 @@ public interface BaseDAO<T extends BaseModel> {
 
     T get(Long id);
 
-    List<T> getall();
+    List<T> getAll();
 }
