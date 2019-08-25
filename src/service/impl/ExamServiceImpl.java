@@ -1,4 +1,8 @@
 package service.impl;
 
-public class ExamServiceImpl {
+import com.company.Exam;
+import service.ExamService;
+
+public abstract class ExamServiceImpl extends BaseServiceImpl<Exam> implements ExamService {
+
 }

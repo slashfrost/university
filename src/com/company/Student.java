@@ -8,6 +8,6 @@ import java.util.Map;
 
 public class Student extends BaseModel {
     int scholarship;
-    Map<Exam, ExamStagesEnum> passing = new HashMap<Exam, ExamStagesEnum>();
+    public Map<Exam, ExamStagesEnum> passing = new HashMap<Exam, ExamStagesEnum>();
 
 }
